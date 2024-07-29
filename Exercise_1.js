@@ -2,14 +2,12 @@
 // Write, Edit and Run your Javascript code using JS Online Compiler
 // time complexity = O(log n)
 // space complexity = O(1)
-console.log("Try programiz.pro");class BinarySearch {
+class BinarySearch {
     // Returns index of x if it is present in arr[l.. r], else return -1
    binarySearch(arr, l, r, x) {
        while(l <= r){
            let mid = Math.floor(l + (r - l)/2);
-           console.log("mid", mid)
            if(arr[mid] === x) {
-               
                return mid;
            } else {
                if(arr[mid] < x){

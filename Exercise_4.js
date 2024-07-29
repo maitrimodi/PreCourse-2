@@ -2,6 +2,8 @@ class MergeSort {
      // Merges two subarrays of arr[].
      // First subarray is arr[l..m]
      // Second subarray is arr[m+1..r]
+    //  time complexity: O(r-l+1)
+    //  space complexity: O(r-l+1)
     merge(arr, l, m, r) {
         //Your code here
         let n1 = m - l + 1;
@@ -51,6 +53,8 @@ class MergeSort {
 ​
     // Main function that sorts arr[l..r] using
     // merge()
+    //  time complexity: O(n log n)
+    //  space complexity: O(n)
     sort(arr, l, r) {
         //Write your code here
         //Call mergeSort from here
@@ -67,6 +71,8 @@ class MergeSort {
     }
 ​
      /* A utility function to print array of size n */
+     //  time complexity: O(n)
+    //  space complexity: O(1)
     printArray(arr) {
         let n = arr.length;
         for (let i = 0; i < n; ++i)

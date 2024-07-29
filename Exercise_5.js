@@ -1,5 +1,7 @@
 class IterativeQuickSort {
 
+    // time complexity: O(1)
+    // space complexity: O(1)
     swap(arr, i, j) {
     //Try swapping without extra variable
         if (i !== j) { // To avoid swapping the same element
@@ -12,6 +14,8 @@ class IterativeQuickSort {
 
     /* This function is same in both iterative and
            recursive*/
+    // time complexity: O(n)
+    // space complexity: O(1)
     partition(arr, l, h) {
     //Compare elements and swap.
         let pivot = arr[h];
@@ -28,6 +32,8 @@ class IterativeQuickSort {
     }
 
     // Sorts arr[l..h] using iterative QuickSort
+    // time complexity: O(n log n)
+    // space complexity: O(log n)
     QuickSort(arr, l, h) {
     //Try using Stack Data Structure to remove recursion.
         // Create an auxiliary stack
@@ -65,6 +71,8 @@ class IterativeQuickSort {
     }
 
     // A utility function to print contents of arr
+    // time complexity: O(n)
+    // space complexity: O(1)
     printArr(arr, n) {
         let i;
         for (i = 0; i < n; ++i)
