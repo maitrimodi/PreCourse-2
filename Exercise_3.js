@@ -14,18 +14,29 @@ class LinkedList {
 ​
     /* Function to print middle of linked list */
     //Complete this function
-    function printMiddle() {
+    printMiddle() {
         //Write your code here
        	//Implement using Fast and slow pointers
+        let fastPtr = this.head;
+        let slowPtr = this.head;
+
+        if(this.head !== null){
+            while(fastPtr !== null && fastPtr.next !== null){
+                fastPtr = fastPtr.next.next;
+                slowPtr = slowPtr.next;
+            }
+        }
+        console.log("The middle element is ", slowPtr.data);
+
     }
 ​
-    function push(new_data) {
+    push(new_data) {
         let new_node = new this.Node(new_data);
         new_node.next = this.head;
         this.head = new_node;
     }
 ​
-    function printList() {
+    printList() {
         let tnode = this.head;
         while (tnode != null) {
             console.log(tnode.data + "->");
